@@ -12,7 +12,7 @@ workflows:
   run1: 
     jobs:
       - idemo:
-          context: kon
+          context: cc-api-develop
           filters:
             branches:
               only: master
