@@ -9,3 +9,8 @@ jobs:
       - run:
         command: |
             ls
+workflows:
+  version: 2
+  run1: 
+    jobs:
+      - idemo
