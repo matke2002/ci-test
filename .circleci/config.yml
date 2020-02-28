@@ -14,6 +14,7 @@ workflows:
   run1: 
     jobs:
       - idemo:
+          context: kon
           filters:
             branches:
               only: master
