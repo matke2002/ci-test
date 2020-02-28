@@ -39,10 +39,10 @@ workflows:
   build-test-deploy:
     jobs:
       - myjob: # a sample job that would be defined above.
-#        steps:
-#          - test:
-#              from: .
-#              to: "s3://mybucket_uri"
-#              overwrite: true
+        steps:
+          - test:
+              from: .
+              to: "s3://mybucket_uri"
+              overwrite: true
 
 
