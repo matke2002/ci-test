@@ -13,4 +13,7 @@ workflows:
   version: 2
   run1: 
     jobs:
-      - idemo
+      - idemo:
+          filters:
+            branches:
+              only: master
