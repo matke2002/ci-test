@@ -1,10 +1,11 @@
 version: 2
+# docker run --name pcmd --rm -it circleci/python ls
 jobs:
-  build:
+  idemo:
     docker:
-      - image: circleci/python:3.6
+      - image: circleci/python
     steps:
       - checkout
       - run:
         command: |
-            .circleci/commit_check.sh
+            ls
