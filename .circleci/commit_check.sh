@@ -1,4 +1,7 @@
+#!/bin/bash
 set -e
+
+echo "Enter"
 
 # latest commit
 LATEST_COMMIT=$(git rev-parse HEAD)
