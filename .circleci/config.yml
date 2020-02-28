@@ -12,7 +12,7 @@ version: 2.1
 #    jobs:
 #      - welcome/run
 commands:
-  test:
+  test1:
     description: "A simple test"
     parameters:
       from:
@@ -31,7 +31,7 @@ jobs:
     docker:
       - image: "circleci/node:9.6.1"
     steps:
-      - test:
+      - test1:
           to: "Lev"
           from: "bugarski"
           overwrite: true
@@ -40,7 +40,7 @@ workflows:
     jobs:
       - myjob: # a sample job that would be defined above.
         steps:
-          - test:
+          - test1:
               from: .
               to: "s3://mybucket_uri"
               overwrite: true
