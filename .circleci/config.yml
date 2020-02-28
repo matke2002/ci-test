@@ -26,3 +26,12 @@ commands:
       - run:
           name: Test1
           command: echo "Test1 << parameters.from >> << parameters.to >>"
+jobs:
+  myjob:
+    docker:
+      - image: "circleci/node:9.6.1"
+    steps:
+      - test:
+          to: "Lev"
+          from: "bugarski"
+          overwrite: true
