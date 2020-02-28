@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 # docker run --name pcmd --rm -it circleci/python ls
 jobs:
   idemo:
