@@ -6,7 +6,7 @@ jobs:
       - image: circleci/python
     steps:
       - checkout
-      - run: ls -la circleci
+      - run: ls -la .circleci
 #          chmod +x 
 #          .circleci/commit_check.sh
 workflows:
