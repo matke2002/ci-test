@@ -12,7 +12,6 @@ workflows:
   run1: 
     jobs:
       - idemo:
-          context: org-global
           filters:
             branches:
               only: master
