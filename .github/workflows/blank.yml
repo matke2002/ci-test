@@ -10,6 +10,7 @@ on:
     paths-ignore: 
       - 'README.md'
       - '.github/workflows/*'
+      - metadata.json
 #  pull_request:
 #    branches: [ master ]
 
