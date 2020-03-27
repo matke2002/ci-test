@@ -9,7 +9,7 @@ on:
     branches: [ master ]
     paths-ignore: 
       - 'README.md'
-      - '.github/workflows/*'
+      # - '.github/workflows/*'
       - metadata.json
 #  pull_request:
 #    branches: [ master ]
@@ -34,4 +34,6 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
+        whereis jq
         echo test, and deploy your project.
+
