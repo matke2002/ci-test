@@ -1,4 +1,4 @@
-ver 1.2.9
+ver 1.2.7
 
 - lista kupus
 - ljusti noz
@@ -6,4 +6,3 @@ ver 1.2.9
 - limuni kupus
 - lize papriku
 - stocna hrana i 7 patuljaka
-- zajeb
