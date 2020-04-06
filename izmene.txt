@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ver 1.3.1
+=======
+ver 1.2.7
+>>>>>>> parent of 5589227... draj
 
 - lista kupus
 - ljusti noz
@@ -6,5 +10,8 @@ ver 1.3.1
 - limuni kupus
 - lize papriku
 - stocna hrana i 7 patuljaka
+<<<<<<< HEAD
 - treca sreca
 - prc, nece
+=======
+>>>>>>> parent of 5589227... draj
