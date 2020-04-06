@@ -1,0 +1,12 @@
+ver 1.2.9
+
+- lista kupus
+- ljusti noz
+- cedi sir
+- limuni kupus
+- lize papriku
+- stocna hrana i 7 patuljaka
+- zajeb
+
+git reset --hard HEAD~1
+git push origin HEAD --force

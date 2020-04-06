@@ -1,0 +1,18 @@
+version: 2.1
+# docker run --name pcmd --rm -it circleci/python ls
+jobs:
+  idemo:
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      - run:  chmod +x .circleci/commit_check.sh && bash .circleci/commit_check.sh
+#          
+workflows:
+  version: 2
+  run1: 
+    jobs:
+      - idemo:
+          filters:
+            branches:
+              only: master
