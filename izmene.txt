@@ -10,3 +10,19 @@ ver 1.2.9
 
 git reset --hard HEAD~1
 git push origin HEAD --force
+
+
+brisi sve i pocni od nule:
+
+-- Remove the history from 
+rm -rf .git
+
+-- recreate the repos from the current content only
+git init
+git add .
+git commit -m "Initial commit"
+
+-- push to the github remote repos ensuring you overwrite history
+git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git
+git push -u --force origin master
+
