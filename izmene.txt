@@ -1,4 +1,4 @@
-ver 1.3.0
+ver 1.3.1
 
 - lista kupus
 - ljusti noz
@@ -7,4 +7,4 @@ ver 1.3.0
 - lize papriku
 - stocna hrana i 7 patuljaka
 - treca sreca
-
+- prc, nece
