@@ -1,4 +1,4 @@
-ver 1.2.7
+ver 1.4.0
 
 - lista kupus
 - ljusti noz
@@ -6,3 +6,4 @@ ver 1.2.7
 - limuni kupus
 - lize papriku
 - stocna hrana i 7 patuljaka
+- nova tura
