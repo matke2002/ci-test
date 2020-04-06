@@ -1,4 +1,4 @@
-ver 1.4.5
+ver 1.4.7
 
 - lista kupus
 - ljusti noz
@@ -8,3 +8,4 @@ ver 1.4.5
 - stocna hrana i 7 patuljaka
 - nova tura
 - jos radi
+- a sada ne
