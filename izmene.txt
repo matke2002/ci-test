@@ -1,7 +1,8 @@
-ver 1.2.5
+ver 1.2.7
 
 - lista kupus
 - ljusti noz
 - cedi sir
 - limuni kupus
 - lize papriku
+- stocna hrana i 7 patuljaka
