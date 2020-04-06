@@ -3,3 +3,4 @@ ver 1.2.3
 - lista kupus
 - ljusti noz
 - cedi sir
+- limuni kupus
