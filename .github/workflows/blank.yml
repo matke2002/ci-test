@@ -36,6 +36,6 @@ jobs:
         echo Add other actions to build,
         jq ".version" metadata.json
         echo test, and deploy your project.
-        ftp --help
+        ftp -h
         ls -l
 
