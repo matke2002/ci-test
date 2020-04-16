@@ -50,13 +50,13 @@ jobs:
       with:
         name: slike
         path: ./
-  win-run:
+  win-run1:
     runs-on: self-hosted
     needs: artifakt
     steps:
-    - name: win masina
+    - name: win masina 2
       run: |
-        mkdir trci 2
+        mkdir trci
     - name: preuzmi paket
       uses: actions/download-artifact@v1
       with:
