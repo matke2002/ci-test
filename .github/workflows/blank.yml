@@ -43,12 +43,12 @@ jobs:
     steps:
     - name: preuzimanje
       run: |
-        wget https://en.wikipedia.org/wiki/Cat#/media/File:Domestic_Cat_Demonstrating_Dilated_Slit_Pupils.jpg
-        wget https://en.wikipedia.org/wiki/Old_World_sparrow#/media/File:Rufous-necked_Snowfinch_Pangolakha_Wildlife_Sanctuary_East_Sikkim_India_18.10.2015.jpg
+        wget https://t7-live-ahsd8.nyc3.cdn.digitaloceanspaces.com/animalhumanesociety.org/files/styles/crop_16_9_960x540/flypub/media/image/2017-07/IMG_1090.jpg
+        wget https://www.abc.net.au/news/image/1154232-3x2-700x467.jpg
     - name: paket
       uses: actions/upload-artifact@v1
       with:
-        name: homework
+        name: slike
         path: ./
   win-run:
     runs-on: self-hosted
@@ -60,5 +60,5 @@ jobs:
     - name: preuzmi paket
       uses: actions/download-artifact@v1
       with:
-        name: homework
+        name: slike
 
