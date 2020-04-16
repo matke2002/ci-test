@@ -53,6 +53,7 @@ jobs:
   win-run:
     runs-on: ivan-test-win
     needs: artifakt
+    steps:
     - name: win masina
       run: |
         mkdir trci
