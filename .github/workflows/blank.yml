@@ -51,7 +51,7 @@ jobs:
         name: homework
         path: ./
   win-run:
-    runs-on: ivan-test-win
+    runs-on: self-hosted
     needs: artifakt
     steps:
     - name: win masina
