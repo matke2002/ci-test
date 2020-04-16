@@ -38,4 +38,26 @@ jobs:
         echo test, and deploy your project.
         ftp -h
         ls -l
+  artifakt:
+    runs-on: ubuntu-latest
+    steps:
+    - name: preuzimanje
+      run: |
+        wget https://en.wikipedia.org/wiki/Cat#/media/File:Domestic_Cat_Demonstrating_Dilated_Slit_Pupils.jpg
+        wget https://en.wikipedia.org/wiki/Old_World_sparrow#/media/File:Rufous-necked_Snowfinch_Pangolakha_Wildlife_Sanctuary_East_Sikkim_India_18.10.2015.jpg
+    - name: paket
+      uses: actions/upload-artifact@v1
+        with:
+          name: homework
+          path: *
+  win-run:
+    runs-on: ivan-test-win
+    needs: artifakt
+    - name: win masina
+      run: |
+        mkdir trci
+    - name: preuzmi paket
+        uses: actions/download-artifact@v1
+        with:
+          name: homework
 
