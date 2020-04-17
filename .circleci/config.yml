@@ -6,7 +6,7 @@ jobs:
       - image: circleci/python
     steps:
       - checkout
-      - run:  ftp -h && chmod +x .circleci/commit_check.sh && bash .circleci/commit_check.sh
+      - run:  echo hellooooo   # ftp -h && chmod +x .circleci/commit_check.sh && bash .circleci/commit_check.sh
 #          
 workflows:
   version: 2
