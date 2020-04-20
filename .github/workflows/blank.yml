@@ -50,7 +50,7 @@ jobs:
         name: slike
         path: ./
   win-run1:
-    runs-on: [self-hosted, r3]
+    runs-on: [self-hosted, r3, r2]
     needs: artifakt
     steps:
     - name: win masina
