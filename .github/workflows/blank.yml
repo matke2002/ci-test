@@ -53,7 +53,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        lbl: [r1, r3]
         os: [ [ self-hosted, r1 ], [ self-hosted, r2 ] , [ self-hosted, r3 ]  ]
     needs: artifakt
     steps:
