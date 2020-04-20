@@ -50,10 +50,11 @@ jobs:
         name: slike
         path: ./
   win-run:
-    runs-on: [ self-hosted, ${{ matrix.lbl }} ]
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         lbl: [r1, r3]
+        os: [ [ self-hosted, r1 ], [ self-hosted, r2 ] , [ self-hosted, r3 ]  ]
     needs: artifakt
     steps:
     - name: win masina
