@@ -49,8 +49,8 @@ jobs:
       with:
         name: slike
         path: ./
-  win-run1:
-    runs-on: [self-hosted, ${{ matrix.lbl }}]
+  win-run:
+    runs-on: [ self-hosted, ${{ matrix.lbl }} ]
     strategy:
       matrix:
         lbl: [r1, r3]
