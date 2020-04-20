@@ -53,7 +53,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ [ self-hosted, r1 ], [ self-hosted, r2 ] , [ self-hosted, r3 ]  ]
+        os: [  self-hosted  ]
+        lbl: [  r1, r2, r3 ]  
     needs: artifakt
     steps:
     - name: win masina
