@@ -49,12 +49,30 @@ jobs:
       with:
         name: slike
         path: ./
-  win-run:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [  self-hosted  ]
-        lbl: [  r1, r2, r3 ]  
+  win-run1:
+    runs-on: [  self-hosted , r1 ]
+    needs: artifakt
+    steps:
+    - name: win masina
+      run: |
+        mkdir trci
+    - name: preuzmi paket
+      uses: actions/download-artifact@v1
+      with:
+        name: slike
+  win-run2:
+    runs-on: [  self-hosted , r2 ]
+    needs: artifakt
+    steps:
+    - name: win masina
+      run: |
+        mkdir trci
+    - name: preuzmi paket
+      uses: actions/download-artifact@v1
+      with:
+        name: slike
+  win-run3:
+    runs-on: [  self-hosted , r3 ]
     needs: artifakt
     steps:
     - name: win masina
