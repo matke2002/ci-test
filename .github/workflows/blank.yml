@@ -71,5 +71,16 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: slike
+  win-run3:
+    runs-on: [self-hosted, r1]
+    needs: artifakt
+    steps:
+    - name: win masina
+      run: |
+        mkdir trci
+    - name: preuzmi paket
+      uses: actions/download-artifact@v1
+      with:
+        name: slike
 
 
