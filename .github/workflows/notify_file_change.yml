@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        "docker run --rm curlimages/curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"Dokument je izmenjen\"}' 'https://hooks.slack.com/services/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'" 
+        "docker run --rm curlimages/curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"Dokument je izmenjen\"}' 'https://hooks.slack.com/services/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'" 
 
