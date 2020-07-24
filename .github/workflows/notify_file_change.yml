@@ -17,5 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
+        whereis curl 
         "docker run --rm curlimages/curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"Dokument je izmenjen\"}' ${{ secrets.webhook_docs }}" 
 
