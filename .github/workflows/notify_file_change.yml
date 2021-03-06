@@ -22,5 +22,5 @@ jobs:
     - run: |
         git diff-tree --no-commit-id --name-only -r ${{ github.sha }} 
         # curl -X POST -H 'Content-type: application/json' --data '{"text":"Dokument je izmenjen"}' ${{ secrets.webhook_docs }} 
-        echo `${{ github.run_number }} - $VER`
+        echo `expr ${{ github.run_number }} - $VER`
 
