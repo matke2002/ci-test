@@ -16,11 +16,11 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      VER: `expr ${{ github.run_number }} - 5`
+      VER: 5
     steps:
     - uses: actions/checkout@v2
     - run: |
         git diff-tree --no-commit-id --name-only -r ${{ github.sha }} 
         # curl -X POST -H 'Content-type: application/json' --data '{"text":"Dokument je izmenjen"}' ${{ secrets.webhook_docs }} 
-        echo $VER
+        echo `${{ github.run_number }} - $VER`
 
